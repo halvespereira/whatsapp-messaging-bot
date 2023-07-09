@@ -1,6 +1,4 @@
 async function sendWhatsAppMessages() {
-  console.log("hello");
-
   const table = document.getElementById("myTable");
   const rows = table.getElementsByTagName("tr");
 
