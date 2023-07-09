@@ -13,15 +13,13 @@ async function sendWhatsAppMessages() {
     customers.push({ nome, whatsapp });
   }
 
-  const response = await fetch("/sendMessages", {
+  await fetch("/sendMessages", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ customers }),
   });
-
-  const data = await response.json();
 }
 
 function handleFile(event) {
