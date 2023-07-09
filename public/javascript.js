@@ -22,7 +22,6 @@ async function sendWhatsAppMessages() {
   });
 
   const data = await response.json();
-  console.log(data);
 }
 
 function handleFile(event) {
